@@ -1,0 +1,357 @@
+[05-07-2018 22:28:19] [main] [INFO ] - Starting AppStart on punchCleric with PID 6496 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:28:19] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:28:19] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:28:19 EEST 2018]; root of context hierarchy
+[05-07-2018 22:28:22] [main] [INFO ] - Overriding bean definition for bean 'velocityConfig' with a different definition: replacing [Generic bean: class [com.webapp.web.config.VelocityConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Хай Ле\IdeaProjects\webapp[2]\target\classes\com\webapp\web\config\VelocityConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=velocityConfig; factoryMethodName=velocityConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/webapp/web/config/VelocityConfig.class]]
+[05-07-2018 22:28:23] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:28:26] [main] [WARN ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+[05-07-2018 22:28:26] [main] [INFO ] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[05-07-2018 22:28:26] [main] [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.webapp.AppStart.main(AppStart.java:11)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:675)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1490)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:425)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 19 common frames omitted
+[05-07-2018 22:30:19] [main] [INFO ] - Starting AppStart on punchCleric with PID 3944 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:30:19] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:30:19] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:30:19 EEST 2018]; root of context hierarchy
+[05-07-2018 22:30:20] [main] [INFO ] - Overriding bean definition for bean 'velocityConfig' with a different definition: replacing [Generic bean: class [com.webapp.web.config.VelocityConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Хай Ле\IdeaProjects\webapp[2]\target\classes\com\webapp\web\config\VelocityConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=velocityConfig; factoryMethodName=velocityConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/webapp/web/config/VelocityConfig.class]]
+[05-07-2018 22:30:20] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:30:21] [main] [WARN ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+[05-07-2018 22:30:21] [main] [INFO ] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[05-07-2018 22:30:21] [main] [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.webapp.AppStart.main(AppStart.java:11)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:675)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1490)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:425)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 19 common frames omitted
+[05-07-2018 22:31:51] [main] [INFO ] - Starting AppStart on punchCleric with PID 3384 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:31:51] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:31:51] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:31:51 EEST 2018]; root of context hierarchy
+[05-07-2018 22:31:52] [main] [INFO ] - Overriding bean definition for bean 'velocityConfig' with a different definition: replacing [Generic bean: class [com.webapp.web.config.VelocityConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Хай Ле\IdeaProjects\webapp[2]\target\classes\com\webapp\web\config\VelocityConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=velocityConfig; factoryMethodName=velocityConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/webapp/web/config/VelocityConfig.class]]
+[05-07-2018 22:31:52] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:31:53] [main] [WARN ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+[05-07-2018 22:31:53] [main] [INFO ] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[05-07-2018 22:31:53] [main] [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.webapp.AppStart.main(AppStart.java:11)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:675)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1490)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:425)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 19 common frames omitted
+[05-07-2018 22:33:16] [main] [INFO ] - Starting AppStart on punchCleric with PID 7260 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:33:16] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:33:16] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:33:16 EEST 2018]; root of context hierarchy
+[05-07-2018 22:33:17] [main] [INFO ] - Overriding bean definition for bean 'velocityConfig' with a different definition: replacing [Generic bean: class [com.webapp.web.config.VelocityConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Хай Ле\IdeaProjects\webapp[2]\target\classes\com\webapp\web\config\VelocityConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=velocityConfig; factoryMethodName=velocityConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/webapp/web/config/VelocityConfig.class]]
+[05-07-2018 22:33:17] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:33:18] [main] [WARN ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+[05-07-2018 22:33:18] [main] [INFO ] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[05-07-2018 22:33:18] [main] [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.webapp.AppStart.main(AppStart.java:11)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:675)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1490)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:425)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 19 common frames omitted
+[05-07-2018 22:35:15] [main] [INFO ] - Starting AppStart on punchCleric with PID 3164 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:35:15] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:35:15] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:35:15 EEST 2018]; root of context hierarchy
+[05-07-2018 22:35:15] [main] [INFO ] - Overriding bean definition for bean 'velocityConfig' with a different definition: replacing [Generic bean: class [com.webapp.web.config.VelocityConfig]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Хай Ле\IdeaProjects\webapp[2]\target\classes\com\webapp\web\config\VelocityConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=velocityConfig; factoryMethodName=velocityConfig; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/webapp/web/config/VelocityConfig.class]]
+[05-07-2018 22:35:16] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:35:16] [main] [WARN ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+[05-07-2018 22:35:16] [main] [INFO ] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[05-07-2018 22:35:16] [main] [ERROR] - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodValidationPostProcessor' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Unsatisfied dependency expressed through method 'methodValidationPostProcessor' parameter 0; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:225)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.webapp.AppStart.main(AppStart.java:11)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'velocityConfig' defined in class path resource [com/webapp/web/config/VelocityConfig.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:675)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1490)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:425)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 19 common frames omitted
+[05-07-2018 22:36:08] [main] [INFO ] - Starting AppStart on punchCleric with PID 7780 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:36:08] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:36:08] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:36:08 EEST 2018]; root of context hierarchy
+[05-07-2018 22:36:09] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:36:10] [main] [INFO ] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b88bf533] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-07-2018 22:36:10] [main] [INFO ] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[05-07-2018 22:36:10] [main] [INFO ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$13f43034] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-07-2018 22:36:11] [main] [INFO ] - Tomcat initialized with port(s): 8080 (http)
+[05-07-2018 22:36:11] [main] [INFO ] - Starting service [Tomcat]
+[05-07-2018 22:36:11] [main] [INFO ] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Initializing Spring embedded WebApplicationContext
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Root WebApplicationContext: initialization completed in 3521 ms
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Mapping servlet: 'dispatcherServlet' to [/]
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Mapping servlet: 'CXFServlet' to [/services/*]
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[05-07-2018 22:36:12] [localhost-startStop-1] [INFO ] - Mapping filter: 'requestContextFilter' to: [/*]
+[05-07-2018 22:36:13] [MLog-Init-Reporter] [INFO ] - MLog clients using slf4j logging.
+[05-07-2018 22:36:13] [main] [INFO ] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[05-07-2018 22:36:14] [main] [INFO ] - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-07-2018 22:36:14] [main] [INFO ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-07-2018 22:36:14] [main] [INFO ] - HHH000412: Hibernate Core {5.2.17.Final}
+[05-07-2018 22:36:14] [main] [INFO ] - HHH000206: hibernate.properties not found
+[05-07-2018 22:36:14] [main] [INFO ] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-07-2018 22:36:15] [main] [INFO ] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1b6123h9wty8cpi1aklxmv|7f9e1534, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b6123h9wty8cpi1aklxmv|7f9e1534, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/webapp[2]?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[05-07-2018 22:36:22] [main] [INFO ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-07-2018 22:36:23] [main] [INFO ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-07-2018 22:36:24] [main] [INFO ] - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+[05-07-2018 22:36:24] [main] [INFO ] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:36:08 EEST 2018]; root of context hierarchy
+[05-07-2018 22:36:24] [main] [INFO ] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-07-2018 22:36:24] [main] [INFO ] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-07-2018 22:36:24] [main] [INFO ] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:36:24] [main] [INFO ] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:36:24] [main] [INFO ] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:36:25] [main] [INFO ] - Registering beans for JMX exposure on startup
+[05-07-2018 22:36:25] [main] [INFO ] - Tomcat started on port(s): 8080 (http)
+[05-07-2018 22:36:25] [main] [INFO ] - Started AppStart in 17.866 seconds (JVM running for 18.916)
+[05-07-2018 22:37:26] [http-nio-8080-exec-1] [INFO ] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[05-07-2018 22:37:26] [http-nio-8080-exec-1] [INFO ] - FrameworkServlet 'dispatcherServlet': initialization started
+[05-07-2018 22:37:27] [http-nio-8080-exec-1] [INFO ] - FrameworkServlet 'dispatcherServlet': initialization completed in 251 ms
+[05-07-2018 22:39:10] [main] [INFO ] - Starting AppStart on punchCleric with PID 7564 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:39:10] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:39:10] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:39:10 EEST 2018]; root of context hierarchy
+[05-07-2018 22:39:11] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:39:15] [main] [INFO ] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3d0f41b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-07-2018 22:39:15] [main] [INFO ] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[05-07-2018 22:39:15] [main] [INFO ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98777cb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-07-2018 22:39:16] [main] [INFO ] - Tomcat initialized with port(s): 8080 (http)
+[05-07-2018 22:39:17] [main] [INFO ] - Starting service [Tomcat]
+[05-07-2018 22:39:17] [main] [INFO ] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Initializing Spring embedded WebApplicationContext
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Root WebApplicationContext: initialization completed in 6695 ms
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Mapping servlet: 'dispatcherServlet' to [/]
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Mapping servlet: 'CXFServlet' to [/services/*]
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[05-07-2018 22:39:17] [localhost-startStop-1] [INFO ] - Mapping filter: 'requestContextFilter' to: [/*]
+[05-07-2018 22:39:17] [MLog-Init-Reporter] [INFO ] - MLog clients using slf4j logging.
+[05-07-2018 22:39:17] [main] [INFO ] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[05-07-2018 22:39:18] [main] [INFO ] - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-07-2018 22:39:18] [main] [INFO ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-07-2018 22:39:18] [main] [INFO ] - HHH000412: Hibernate Core {5.2.17.Final}
+[05-07-2018 22:39:18] [main] [INFO ] - HHH000206: hibernate.properties not found
+[05-07-2018 22:39:19] [main] [INFO ] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-07-2018 22:39:19] [main] [INFO ] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1b6123h9wtycb7713kqha2|32fdec40, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b6123h9wtycb7713kqha2|32fdec40, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/webapp[2]?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[05-07-2018 22:39:20] [main] [INFO ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-07-2018 22:39:21] [main] [INFO ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-07-2018 22:39:22] [main] [INFO ] - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+[05-07-2018 22:39:22] [main] [INFO ] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:39:10 EEST 2018]; root of context hierarchy
+[05-07-2018 22:39:22] [main] [INFO ] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-07-2018 22:39:22] [main] [INFO ] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-07-2018 22:39:22] [main] [INFO ] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:39:22] [main] [INFO ] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:39:22] [main] [INFO ] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:39:23] [main] [INFO ] - Registering beans for JMX exposure on startup
+[05-07-2018 22:39:23] [main] [INFO ] - Tomcat started on port(s): 8080 (http)
+[05-07-2018 22:39:23] [main] [INFO ] - Started AppStart in 13.88 seconds (JVM running for 18.017)
+[05-07-2018 22:39:26] [http-nio-8080-exec-1] [INFO ] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[05-07-2018 22:39:26] [http-nio-8080-exec-1] [INFO ] - FrameworkServlet 'dispatcherServlet': initialization started
+[05-07-2018 22:39:26] [http-nio-8080-exec-1] [INFO ] - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+[05-07-2018 22:40:02] [main] [INFO ] - Starting AppStart on punchCleric with PID 7244 (started by Хай Ле in C:\Users\Хай Ле\IdeaProjects\webapp[2])
+[05-07-2018 22:40:02] [main] [INFO ] - No active profile set, falling back to default profiles: default
+[05-07-2018 22:40:02] [main] [INFO ] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:40:02 EEST 2018]; root of context hierarchy
+[05-07-2018 22:40:03] [main] [INFO ] - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+[05-07-2018 22:40:03] [main] [INFO ] - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$336f5c70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-07-2018 22:40:03] [main] [INFO ] - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[05-07-2018 22:40:03] [main] [INFO ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ed79771] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-07-2018 22:40:04] [main] [INFO ] - Tomcat initialized with port(s): 20000 (http)
+[05-07-2018 22:40:04] [main] [INFO ] - Starting service [Tomcat]
+[05-07-2018 22:40:04] [main] [INFO ] - Starting Servlet Engine: Apache Tomcat/8.5.31
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Initializing Spring embedded WebApplicationContext
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Root WebApplicationContext: initialization completed in 2138 ms
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Mapping servlet: 'dispatcherServlet' to [/]
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Mapping servlet: 'CXFServlet' to [/services/*]
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[05-07-2018 22:40:04] [localhost-startStop-1] [INFO ] - Mapping filter: 'requestContextFilter' to: [/*]
+[05-07-2018 22:40:04] [MLog-Init-Reporter] [INFO ] - MLog clients using slf4j logging.
+[05-07-2018 22:40:04] [main] [INFO ] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[05-07-2018 22:40:04] [main] [INFO ] - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-07-2018 22:40:04] [main] [INFO ] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-07-2018 22:40:05] [main] [INFO ] - HHH000412: Hibernate Core {5.2.17.Final}
+[05-07-2018 22:40:05] [main] [INFO ] - HHH000206: hibernate.properties not found
+[05-07-2018 22:40:05] [main] [INFO ] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-07-2018 22:40:05] [main] [INFO ] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1b6123h9wtydbexggu7p5|6813a331, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1b6123h9wtydbexggu7p5|6813a331, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/webapp[2]?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[05-07-2018 22:40:05] [main] [INFO ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-07-2018 22:40:06] [main] [INFO ] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-07-2018 22:40:06] [main] [INFO ] - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+[05-07-2018 22:40:06] [main] [INFO ] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@290d210d: startup date [Thu Jul 05 22:40:02 EEST 2018]; root of context hierarchy
+[05-07-2018 22:40:06] [main] [INFO ] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-07-2018 22:40:06] [main] [INFO ] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-07-2018 22:40:07] [main] [INFO ] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:40:07] [main] [INFO ] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:40:07] [main] [INFO ] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-07-2018 22:40:07] [main] [INFO ] - Registering beans for JMX exposure on startup
+[05-07-2018 22:40:07] [main] [INFO ] - Tomcat started on port(s): 20000 (http)
+[05-07-2018 22:40:07] [main] [INFO ] - Started AppStart in 6.302 seconds (JVM running for 7.685)
+[05-07-2018 22:40:14] [http-nio-20000-exec-1] [INFO ] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[05-07-2018 22:40:14] [http-nio-20000-exec-1] [INFO ] - FrameworkServlet 'dispatcherServlet': initialization started
+[05-07-2018 22:40:14] [http-nio-20000-exec-1] [INFO ] - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
