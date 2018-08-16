@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Form Page</title>
+    <script>
+        function submitExample() {
+            var name = document.getElementById("name");
+            alert("Hello, " + name.value);
+        }
+    </script>
+</head>
+
+<body>
+<h1>Form</h1>
+
+<form>
+    <p>Name</p>
+    <input type="text" id="name">
+    <input type="button" value="Submit" onclick="submitExample()">
+</form>
+</body>
+</html>

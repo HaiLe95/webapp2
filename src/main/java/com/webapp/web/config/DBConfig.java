@@ -85,7 +85,7 @@ public class DBConfig {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", HIBERNATE_DIALECT);
         properties.put("hibernate.show_sql", HIBERNATE_SHOW_SQL);
-        properties.put("hibernat.hbm2ddl.auto", HIBERNATE_HBM2DDL_AUTO);
+        properties.put("hibernate.hbm2ddl.auto", HIBERNATE_HBM2DDL_AUTO);
         entityManagerFactoryBean.setJpaProperties(properties);
         return entityManagerFactoryBean;
     }

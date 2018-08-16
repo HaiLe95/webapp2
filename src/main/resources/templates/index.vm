@@ -1,0 +1,24 @@
+<html contentType="text/html;charset=UTF-8" language="java">
+<head>
+    <title>Steal Your Heart</title>
+    <style>
+        #include("/templates/css/style_index.css");
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="welcome">
+            <p class="title"> Welcome to the Persona 5 fan-site! We will steal your heart! </p>
+            <p class="welcome_text">
+                Welcome to the whatever it is home page. Here you can do nothing at all. So go ahead and try it.
+            </p>
+        </div>
+
+        <div class="login_div">
+            <p class="title">Please log in using shit down below.</p>
+            <a href="form.vm">HERE!</a>
+        </div>
+    </div>
+
+</body>
+</html>

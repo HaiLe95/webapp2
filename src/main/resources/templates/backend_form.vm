@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Backend Form Example</title>
+    <script>
+            #include("/templates/static/jquery-3.3.1.js");
+            #include("/templates/scripts/queries.js");
+    </script>
+    <style>
+            #include("/templates/css/backend_form.css");
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>New record:</legend>
+    <p>Name:</p><input    type="text"     id="name"    name="name"><br/>
+    <p>Surname:</p><input type="text"     id="surname" name="surname"><br/>
+    <p>Age:</p><input     type="number"   id="age"     name="age"><br/>
+    <input id="NewRecord" type="button" value="Sign In" onclick="personCreate(event)">
+</fieldset>
+
+<hr/>
+<fieldset>
+    <legend>Workspace:</legend>
+    <input value="persons" type="button" onclick="createPersonsTable()"/>
+    <div id="workspace">
+</fieldset>
+</div>
+</body>
+</html>

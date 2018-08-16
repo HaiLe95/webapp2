@@ -10,7 +10,6 @@ import org.springframework.web.servlet.view.velocity.VelocityToolboxView;
 import org.springframework.web.servlet.view.velocity.VelocityViewResolver;
 
 import javax.annotation.PostConstruct;
-
 @Configuration
 public class VelocityConfig {
 
@@ -33,8 +32,7 @@ public class VelocityConfig {
         VelocityViewResolver resolver = new VelocityViewResolver();
         resolver.setViewClass(VelocityToolboxView.class);
         resolver.setPrefix("/templates/");
-        resolver.setSuffix(".html");
+        resolver.setSuffix(".vm");
         return resolver;
     }
-
 }

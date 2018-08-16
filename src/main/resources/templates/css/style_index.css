@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    margin:100px;
+    background: url("img/p5-index.png");
+}
+.main {
+    border-radius: 40px;
+    align-content: center;
+    background-color: rgba(520, 520, 520, 0.5);
+    margin:0 auto;
+    padding:20px;
+}
+.title {
+    color: #000;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.welcome-text{
+
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.login_form{
+    padding-left:50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.login_div {
+    padding:10px;
+
+}
+
+.welcome{
+    margin-top: auto;
+    margin-bottom: auto;
+}

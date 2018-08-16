@@ -96,7 +96,6 @@
 
     </dependencies>
     <build>
-        <!-- Дополнительные настройки проекта-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

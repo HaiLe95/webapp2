@@ -12,12 +12,9 @@ public class PageController {
         return "index";
     }
 
-    /**
-     *  Isn't available at the moment
-     * @return
-     */
-    @RequestMapping(value = "/loginForm", method = RequestMethod.GET)
-    public String loginPage() {
-        return "login";
-    }
+    @RequestMapping(value = "/form", method = RequestMethod.GET)
+    public String formPage() { return "form"; }
+
+    @RequestMapping(value = "/backForm", method = RequestMethod.GET)
+    public String backendFormPage() { return "backend_form"; }
 }
