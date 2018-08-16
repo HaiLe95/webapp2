@@ -6,6 +6,15 @@ This is fast recreation of webapp I used to work with.
  - Maven
  - MySQL
  
+ ##Tech-stack
+ - Java 8
+ - Hibernate/JPA
+ - Spring boot, IoC
+ - Apache Velocity
+ - html, css, javascript(JQuery)
+ - MySQL
+ - Maven
+ 
 Anything else IDEA will do for ya. I hope so.
 
 First things first create new schema in your localhost dump and name it as "webapp[2]".
